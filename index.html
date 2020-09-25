@@ -46,10 +46,10 @@
   <div class="container">
     <div class="row">
     <div class="col-sm-8" style="text-align: justify;">
-      <p class="text-dark">My dear friend, my name is Krystyna and I am an English teacher. I have a bachelor degree in this field and several years of work experience. I will teach you English in Follonica (Italy) or you may choose online course with me.</p>
-      <p class="text-muted">Милый друг, меня зовут Кристина и я учитель английского языка. У меня есть степень бакалавра в этой области и несколько лет опыта работы педагогом. Я научу Вас английскому в Фоллонике (Италия) или Вы можете выбрать онлайн-курс вместе со мной.</p>
+      <p class="text-dark">My dear friend, my name is Krystyna and I am an English teacher. I have a bachelor degree in this field and several years of work experience. I will teach you English in Follonica (Italy) or you may choose online course with me. You may contact me by texting me on bodlievak@seznam.cz</p>
+      <p class="text-muted">Милый друг, меня зовут Кристина и я учитель английского языка. У меня есть степень бакалавра в этой области и несколько лет опыта работы педагогом. Я научу Вас английскому в Фоллонике (Италия) или Вы можете выбрать онлайн-курс вместе со мной. Мой мейл: bodlievak@seznam.cz</p>
       <p class="text-muted">
-        Caro amico, mi chiama Krystyna e sono un insegnante di inglese. Ho una laurea in questo campo e diversi anni di esperienza. Ti insegnerò inglese a Follonica oppure puoi scegliere un corso online con me.
+        Caro amico, mi chiama Krystyna e sono un insegnante di inglese. Ho una laurea in questo campo e diversi anni di esperienza. Ti insegnerò inglese a Follonica oppure puoi scegliere un corso online con me. Il mio e-mail: bodlievak@seznam.cz
         </p>
     </div>
     <div class="col-sm-4" >
@@ -113,7 +113,7 @@
 
 
 <!-- Third Grid (contact form) -->
-<form class="container needs-validation justify-content-center align-items-center col-12 col-md-8 col-lg-6" novalidate action="contact-form-handler.php" method="post" enctype="text/plain">
+<form class="container needs-validation justify-content-center align-items-center col-12 col-md-8 col-lg-6" novalidate action="contact-form-handler.php" method="post">
   <div class="form-group row">
     <label for="inputName3" class="col-form-label"></label>
     <div class="col-sm-12 pt-3">
@@ -215,7 +215,7 @@
   <div class="form-group row">
     <label for="inputName3" class="col-form-label"></label>
     <div class="col-sm-12">
-      <input type="text" class="form-control" id="inputName3" placeholder="First Name" required>
+      <input type="text" name="name" class="form-control" id="inputName3" placeholder="First Name" required>
       <div class="invalid-feedback">
   Please provide a First Name.
 </div>
@@ -224,7 +224,7 @@
   <div class="form-group row">
     <label for="inputSurname3" class="col-form-label"></label>
     <div class="col-sm-12">
-      <input type="text" class="form-control" id="inputSurname3" placeholder="Last Name" required>
+      <input type="text" name="name2" class="form-control" id="inputSurname3" placeholder="Last Name" required>
       <div class="invalid-feedback">
   Please provide a Last Name.
 </div>
@@ -233,7 +233,7 @@
   <div class="form-group row">
     <label for="inputEmail3" class="col-form-label"></label>
     <div class="col-sm-12">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="name@example.com" required>
+      <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="name@example.com" required>
       <div class="invalid-feedback">
   Please provide an email.
 </div>
@@ -263,7 +263,7 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" required></textarea>
+          <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" required></textarea>
           <div class="invalid-feedback">
       Please leave your message.
     </div>
