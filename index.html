@@ -113,11 +113,11 @@
 
 
 <!-- Third Grid (contact form) -->
-<form class="container needs-validation justify-content-center align-items-center col-12 col-md-8 col-lg-6" novalidate action="mailto:kbodlieva@gmail.com" method="post" enctype="text/plain">
+<form class="container needs-validation justify-content-center align-items-center col-12 col-md-8 col-lg-6" novalidate action="contact-form-handler.php" method="post" enctype="text/plain">
   <div class="form-group row">
     <label for="inputName3" class="col-form-label"></label>
     <div class="col-sm-12 pt-3">
-      <input type="text" class="form-control" id="inputName3" placeholder="First Name" required>
+      <input type="text" name="name" class="form-control" id="inputName3" placeholder="First Name" required>
       <div class="invalid-feedback">
   Please provide a First Name.
 </div>
@@ -126,7 +126,7 @@
   <div class="form-group row">
     <label for="inputSurname3" class="col-form-label"></label>
     <div class="col-sm-12">
-      <input type="text" class="form-control" id="inputSurname3" placeholder="Last Name" required>
+      <input type="text" name="name2" class="form-control" id="inputSurname3" placeholder="Last Name" required>
       <div class="invalid-feedback">
   Please provide a Last Name.
 </div>
@@ -135,7 +135,7 @@
   <div class="form-group row">
     <label for="inputEmail3" class="col-form-label"></label>
     <div class="col-sm-12">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="name@example.com" required>
+      <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="name@example.com" required>
       <div class="invalid-feedback">
   Please provide an email.
 </div>
@@ -146,26 +146,26 @@
       <legend class="col-form-label pt-0"></legend>
       <div class="col-sm-12">
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="privateLessons" value="option1" checked>
+          <input class="form-check-input" name="privateLessons" type="radio" name="gridRadios" id="privateLessons" value="option1" checked>
           <label class="form-check-label" for="privateLessons">
             Private lessons
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="onlineLessons" value="option2">
+          <input class="form-check-input" name="onlineLessons" type="radio" name="gridRadios" id="onlineLessons" value="option2">
           <label class="form-check-label" for="onlineLessons">
             On-line Lessons
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="translating" value="option3">
+          <input class="form-check-input" name="translating"  type="radio" name="gridRadios" id="translating" value="option3">
           <label class="form-check-label" for="translating">
             Translation
           </label>
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" required></textarea>
+          <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" required></textarea>
           <div class="invalid-feedback">
       Please leave your message.
     </div>
