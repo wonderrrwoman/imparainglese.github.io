@@ -1,0 +1,119 @@
+/*home section image with the bridge*/
+.image {
+  background-image: url("pexels-naveen-annam-1578286.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+/*home section image on bigger screens */
+@media(min-width: 760px){
+  .image{
+  background-image:url("Screenshot 2020-09-22 at 10.32.16.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+   }
+}
+/*hide quote text in home section image on bigger screens */
+@media(min-width: 760px){
+  blockquote{
+    display:none;
+  }
+}
+@media(min-width: 1000px){
+  blockquote{
+    display:block;
+  }
+}
+
+/*back to top button (red)*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*about me section image with table and comp*/
+.image2 {
+  width: 100%;
+  max-width: 474px;
+  height: auto;
+  text-align: center;
+}
+
+/*section pricing cards*/
+#pricing {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+section.pricing {
+  background: #007bff;
+  background: #cce5ff linear-gradient(180deg,#d4e9ff,#cce5ff) repeat-x;
+  border-color: #b8daff;
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+/*gray section with quote css*/
+.grey {
+  background-color: #6c757d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+/*footer css*/
+footer{
+  opacity:0.63;
+  color:rgba(0, 0, 0, 0.84);
+}

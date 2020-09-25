@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>English tutor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<body>
+
+
+<!--Button to the top bootstrap 4-->
+  <button  onclick="topFunction()" id="myBtn" title="Go to top"><span class="fa fa-arrow-up"></span></button>
+
+
+<!-- Navbar -->
+<nav class="container navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#aboutme">About Me</a>
+      <a class="nav-item nav-link" href="#pricing">Pricing</a>
+      <a class="nav-item nav-link"  data-toggle="modal" data-target="#exampleModalCenter">Contact Me</a>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Header -->
+<header class="container image" style="padding:15px 0px 60px 30px">
+  <h4 class="text-lg-left " style="padding:70px 0px">Learn English with Krystyna</h4>
+  <blockquote class="blockquote text-lg-left">
+  <p class="text-lg-left font-italic" >"Language is wine upon the lips."</p>
+  <footer class="blockquote-footer font-italic">Virginia Woolf <cite title="Source Title"></cite></footer>
+</blockquote>
+  <button  class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Contact Me</button>
+</header>
+
+
+<!-- First Grid (about me section)-->
+<div id="aboutme" class="pt-3 my-3 container" style="padding-left:0px; padding-right:0px;">
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-8" style="text-align: justify;">
+      <p class="text-dark">My dear friend, my name is Krystyna and I am an English teacher. I have a bachelor degree in this field and several years of work experience. I will teach you English in Follonica (Italy) or you may choose online course with me.</p>
+      <p class="text-muted">Милый друг, меня зовут Кристина и я учитель английского языка. У меня есть степень бакалавра в этой области и несколько лет опыта работы педагогом. Я научу Вас английскому в Фоллонике (Италия) или Вы можете выбрать онлайн-курс вместе со мной.</p>
+      <p class="text-muted">
+        Caro amico, mi chiama Krystyna e sono un insegnante di inglese. Ho una laurea in questo campo e diversi anni di esperienza. Ti insegnerò inglese a Follonica oppure puoi scegliere un corso online con me.
+        </p>
+    </div>
+    <div class="col-sm-4" >
+      <img class="image2" src="pexels-suzy-hazelwood-1130980.jpg" alt="Girl in a jacket" width="100px;" height="100px;">
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Second Grid (cards with price) -->
+<div id="pricing" class="container" >
+  <section class="pricing py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Free Tier -->
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Private lessons</h5>
+              <h6 class="card-price text-center">€10<span class="period">/hour</span></h6>
+              <hr>
+              <p class="text-center">- 1 student</p>
+              <p class="text-center">- Help with Homework</p>
+              <p class="text-center">- On-line lessons or in Follonica (Italy)</p>
+              <a data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-block btn-primary text-uppercase">Contact Me</a>
+            </div>
+          </div>
+        </div>
+        <!-- Plus Tier -->
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Group lessons</h5>
+              <h6 class="card-price text-center">€8<span class="period">/hour</span></h6>
+              <hr>
+              <p class="text-center">- From 2 to 5 people</p>
+              <p class="text-center">- Help with Homework</p>
+              <p class="text-center">- On-line lessons or in Follonica (Italy)</p>
+              <a data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-block btn-primary text-uppercase">Contact Me</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Translation work</h5>
+              <h6 class="card-price text-center">€10<span class="period">/hour</span></h6>
+              <hr>
+              <p class="text-center">- English/Russian</p>
+              <p class="text-center">- English/Italian</p>
+              <p class="text-center">- English/Czech</p>
+              <a data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-block btn-primary text-uppercase">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- Third Grid (contact form) -->
+<form class="container needs-validation justify-content-center align-items-center col-12 col-md-8 col-lg-6" novalidate action="mailto:kbodlieva@gmail.com" method="post" enctype="text/plain">
+  <div class="form-group row">
+    <label for="inputName3" class="col-form-label"></label>
+    <div class="col-sm-12 pt-3">
+      <input type="text" class="form-control" id="inputName3" placeholder="First Name" required>
+      <div class="invalid-feedback">
+  Please provide a First Name.
+</div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputSurname3" class="col-form-label"></label>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" id="inputSurname3" placeholder="Last Name" required>
+      <div class="invalid-feedback">
+  Please provide a Last Name.
+</div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-form-label"></label>
+    <div class="col-sm-12">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="name@example.com" required>
+      <div class="invalid-feedback">
+  Please provide an email.
+</div>
+</div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label pt-0"></legend>
+      <div class="col-sm-12">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="privateLessons" value="option1" checked>
+          <label class="form-check-label" for="privateLessons">
+            Private lessons
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="onlineLessons" value="option2">
+          <label class="form-check-label" for="onlineLessons">
+            On-line Lessons
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="translating" value="option3">
+          <label class="form-check-label" for="translating">
+            Translation
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" required></textarea>
+          <div class="invalid-feedback">
+      Please leave your message.
+    </div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-md-12 text-center">
+      <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+</form>
+
+
+<!-- Fourth Grid (Quote of the day) -->
+
+<div class="container grey">
+<h5 class="">Quote of the day: Just do it</h5>
+</div>
+
+
+<!-- Footer -->
+<footer class="container pt-3 my-3 col-xs-1 " align="center">
+  <div class="pt-4 pb-4">
+    <a href="https://www.facebook.com" class="fa fa-facebook-official fa-2x w3-hover-opacity"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram fa-2x w3-hover-opacity"></a>
+    <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin fa-2x w3-hover-opacity"></a>
+  <a href="https://www.vkontakte.com" class="fa fa-vk fa-2x w3-hover-opacity"></a>
+</div>
+<h6>By K.Bodlieva</h6>
+</footer>
+
+<!-- Modal (on click "contact me")-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Contact Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<!-- body of the form-->
+<form class=" needs-validation"  action="mailto:kbodlieva@gmail.com" method="post" enctype="text/plain" novalidate>
+  <div class="form-group row">
+    <label for="inputName3" class="col-form-label"></label>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" id="inputName3" placeholder="First Name" required>
+      <div class="invalid-feedback">
+  Please provide a First Name.
+</div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputSurname3" class="col-form-label"></label>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" id="inputSurname3" placeholder="Last Name" required>
+      <div class="invalid-feedback">
+  Please provide a Last Name.
+</div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-form-label"></label>
+    <div class="col-sm-12">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="name@example.com" required>
+      <div class="invalid-feedback">
+  Please provide an email.
+</div>
+</div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label pt-0"></legend>
+      <div class="col-sm-12">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="privateLessons" value="option1" checked>
+          <label class="form-check-label" for="privateLessons">
+            Private lessons
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="onlineLessons" value="option2">
+          <label class="form-check-label" for="onlineLessons">
+            On-line Lessons
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="translating" value="option3">
+          <label class="form-check-label" for="translating">
+            Translation
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" required></textarea>
+          <div class="invalid-feedback">
+      Please leave your message.
+    </div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+<!--end body of the form-->
+      <div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit"  class="btn btn-primary">Send</button>
+      </div>
+    </form>
+  </div>
+      </div>
+      </div>
+      </div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
